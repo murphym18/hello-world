@@ -7,4 +7,4 @@ function pretty_print_gfm_markdown() {
     /usr/bin/pandoc "--input=$MARKDOWN_FILE" "--output=-" --from=gfm --to=plain
 }
 
-cat "$PROJECT_PATH/README.md"
+pretty_print_gfm_markdown "$PROJECT_PATH/README.md"
